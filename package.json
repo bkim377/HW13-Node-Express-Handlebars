@@ -1,0 +1,25 @@
+{
+  "name": "hw13-node-express-handlebars",
+  "version": "1.0.0",
+  "description": "My submission for the HW13-Node-Express-Handlebars assignment.",
+  "main": "index.js",
+  "dependencies": {
+    "express-handlebars": "^4.0.3",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkim377/HW13-Node-Express-Handlebars.git"
+  },
+  "author": "Brandon Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkim377/HW13-Node-Express-Handlebars/issues"
+  },
+  "homepage": "https://github.com/bkim377/HW13-Node-Express-Handlebars#readme"
+}
