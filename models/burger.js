@@ -1,4 +1,4 @@
-var orm = require("./config/orm.js");
+var orm = require("../config/orm.js");
 
 // Find all the pets ordering by the lowest price to the highest price.
 orm.selectAndOrder("animal_name", "pets", "price");
@@ -9,4 +9,4 @@ orm.selectWhere("pets", "animal_name", "Rachel");
 // Find the buyer with the most pets.
 orm.findWhoHasMost("buyer_name", "buyer_id", "buyers", "pets");
 
-module.exports = burger;
+module.exports = orm;
