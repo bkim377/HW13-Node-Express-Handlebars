@@ -1,12 +1,21 @@
 var orm = require("../config/orm.js");
 
-// Find all the pets ordering by the lowest price to the highest price.
-orm.selectAndOrder("animal_name", "pets", "price");
+var burger = {
+selectAll: function(cb) { 
+    orm.selectAll("burgers", function(response) {
+    cb(response);
+});
+},
+insertOne: function(cols, vals, cb) {
+    orm.create("burgers", cols, vals, function(res) {
+      cb(res);
+    });
+  },
+updateOne: function(objColVals, condition, cb) {
+    orm.update("burgers", objColVals, condition, function(res) {
+      cb(res);
+    });
+  },
+};
 
-// Find a pet in the pets table by an animal_name of Rachel.
-orm.selectWhere("pets", "animal_name", "Rachel");
-
-// Find the buyer with the most pets.
-orm.findWhoHasMost("buyer_name", "buyer_id", "buyers", "pets");
-
-module.exports = orm;
+module.exports = burger;
