@@ -14,6 +14,6 @@ My submission for the HW13-Node-Express-Handlebars assignment.
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
 
-2) Link to deployed application: 
+2) Link to deployed application: https://sleepy-cove-85461.herokuapp.com/
 
 3) Screenshot: ![Burger Page](BurgersServer.png)
